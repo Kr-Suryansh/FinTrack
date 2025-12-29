@@ -1,2 +1,2 @@
-MONGODB_URI= your MONGODB_URI place here
+MONGODB_URI= place your MONGODB_URI  here
 DB_NAME=fintrack_db
