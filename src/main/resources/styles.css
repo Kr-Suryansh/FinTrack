@@ -1,0 +1,107 @@
+/* Global Styles */
+.root {
+    font-family: 'Segoe UI', sans-serif;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    background-color: #F8FAFC;
+    -fx-background-color: #F8FAFC;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #1E293B;
+    -fx-background-color: #1E293B;
+}
+
+.sidebar-label {
+    -fx-text-fill: white;
+    font-size: 22px;
+    -fx-font-size: 22px;
+    font-weight: bold;
+    -fx-font-weight: bold;
+    padding: 30;
+    -fx-padding: 30;
+}
+
+.nav-button {
+    background-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER-LEFT;
+    padding: 10 20;
+    -fx-padding: 10 20;
+    font-size: 14px;
+    -fx-font-size: 14px;
+    cursor: hand;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    background-color: #334155;
+    -fx-background-color: #334155;
+}
+
+.nav-button:selected {
+    background-color: #06B6D4;
+    -fx-background-color: #06B6D4;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
+
+/* Auth Screens */
+.auth-container {
+    background-color: white;
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+    padding: 40;
+    -fx-padding: 40;
+    max-width: 400;
+    -fx-max-width: 400;
+}
+
+.auth-title {
+    font-size: 24px;
+    -fx-font-size: 24px;
+    font-weight: bold;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E293B;
+}
+
+.text-field {
+    background-color: #F1F5F9;
+    -fx-background-color: #F1F5F9;
+    border-color: #CBD5E1;
+    -fx-border-color: #CBD5E1;
+    border-radius: 4;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    padding: 10;
+    -fx-padding: 10;
+}
+
+.primary-button {
+    background-color: #06B6D4;
+    -fx-background-color: #06B6D4;
+    -fx-text-fill: white;
+    font-weight: bold;
+    -fx-font-weight: bold;
+    padding: 10 20;
+    -fx-padding: 10 20;
+    -fx-background-radius: 4;
+    cursor: hand;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    background-color: #0891B2;
+    -fx-background-color: #0891B2;
+}
+
+.link-button {
+    background-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: #06B6D4;
+    -fx-underline: true;
+    cursor: hand;
+    -fx-cursor: hand;
+}

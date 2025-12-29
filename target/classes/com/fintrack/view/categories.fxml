@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.controller.CategoriesController" style="-fx-padding: 30;">
+    
+    <Label text="Manage Categories" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="nameField" promptText="Category Name" HBox.hgrow="ALWAYS"/>
+        <ComboBox fx:id="typeComboBox" promptText="Type" prefWidth="150"/>
+        <Button text="Add" onAction="#handleAdd" styleClass="primary-button"/>
+    </HBox>
+    <Label fx:id="messageLabel" visible="false"/>
+
+    <HBox spacing="20" VBox.vgrow="ALWAYS">
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Income Categories" style="-fx-font-weight: bold;"/>
+            <ListView fx:id="incomeList" VBox.vgrow="ALWAYS"/>
+        </VBox>
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Expense Categories" style="-fx-font-weight: bold;"/>
+            <ListView fx:id="expenseList" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </HBox>
+</VBox>

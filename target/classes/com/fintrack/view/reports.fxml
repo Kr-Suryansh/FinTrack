@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.controller.ReportsController" style="-fx-padding: 30;">
+    
+    <Label text="Financial Reports" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="20" VBox.vgrow="ALWAYS">
+        <VBox spacing="10" HBox.hgrow="ALWAYS" style="-fx-background-color: white; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+            <Label text="Expenses by Category (Pie)" style="-fx-font-weight: bold;"/>
+            <PieChart fx:id="expensePieChart" />
+        </VBox>
+        
+        <VBox spacing="10" HBox.hgrow="ALWAYS" style="-fx-background-color: white; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+            <Label text="Income vs Expense" style="-fx-font-weight: bold;"/>
+            <BarChart fx:id="incomeExpenseBarChart">
+                <xAxis>
+                    <CategoryAxis label="Type" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis label="Amount" />
+                </yAxis>
+            </BarChart>
+        </VBox>
+    </HBox>
+</VBox>

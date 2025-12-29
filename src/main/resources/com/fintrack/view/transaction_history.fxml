@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.controller.TransactionHistoryController" style="-fx-padding: 30;">
+    
+    <Label text="Transaction Ledger" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="transactionTable" VBox.vgrow="ALWAYS" styleClass="table-view">
+        <columns>
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="120">
+                <cellValueFactory><PropertyValueFactory property="date"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="categoryColumn" text="Category" prefWidth="150">
+                <cellValueFactory><PropertyValueFactory property="category"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="descriptionColumn" text="Description" prefWidth="250">
+                <cellValueFactory><PropertyValueFactory property="description"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="typeColumn" text="Type" prefWidth="100">
+                <cellValueFactory><PropertyValueFactory property="type"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="amountColumn" text="Amount" prefWidth="100">
+                <cellValueFactory><PropertyValueFactory property="amount"/></cellValueFactory>
+            </TableColumn>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </TableView>
+</VBox>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.controller.BudgetController" style="-fx-padding: 30;">
+    
+    <Label text="Budget Planner" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label text="Double click on 'Budget Limit' to edit." style="-fx-text-fill: gray;"/>
+
+    <TableView fx:id="budgetTable" VBox.vgrow="ALWAYS" editable="true">
+        <columns>
+            <TableColumn fx:id="categoryColumn" text="Category" prefWidth="200">
+                <cellValueFactory><PropertyValueFactory property="name"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="limitColumn" text="Budget Limit (Rs.)" prefWidth="150">
+                <cellValueFactory><PropertyValueFactory property="budgetLimit"/></cellValueFactory>
+            </TableColumn>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </TableView>
+</VBox>

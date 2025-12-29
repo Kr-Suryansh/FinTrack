@@ -1,0 +1,56 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.fintrack:FinTrack >------------------------
+[INFO] Building FinTrack 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:17.0.2 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ FinTrack ---
+[INFO] Deleting C:\Users\krsur\Desktop\VS Code\PROJECTS (Current or Finished)\FinTrack (OOJ)\FinTrack\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ FinTrack ---
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ FinTrack ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 20 source files with javac [debug target 17] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] location of system modules is not set in conjunction with -source 17
+  not setting the location of system modules may lead to class files that cannot run on JDK 17
+    --release 17 is recommended instead of -source 17 -target 17 because it sets the location of system modules automatically
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/krsur/Desktop/VS Code/PROJECTS (Current or Finished)/FinTrack (OOJ)/FinTrack/src/main/java/com/fintrack/controller/CategoriesController.java:[68,12] cannot find symbol
+  symbol:   method setUserId(org.bson.types.ObjectId)
+  location: variable cat of type com.fintrack.model.Category
+[ERROR] /C:/Users/krsur/Desktop/VS Code/PROJECTS (Current or Finished)/FinTrack (OOJ)/FinTrack/src/main/java/com/fintrack/controller/BudgetController.java:[42,20] cannot find symbol
+  symbol:   method setBudgetLimit(java.lang.Double)
+  location: variable cat of type com.fintrack.model.Category
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.790 s
+[INFO] Finished at: 2025-12-25T18:04:29+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project FinTrack: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/krsur/Desktop/VS Code/PROJECTS (Current or Finished)/FinTrack (OOJ)/FinTrack/src/main/java/com/fintrack/controller/CategoriesController.java:[68,12] cannot find symbol
+[ERROR]   symbol:   method setUserId(org.bson.types.ObjectId)
+[ERROR]   location: variable cat of type com.fintrack.model.Category
+[ERROR] /C:/Users/krsur/Desktop/VS Code/PROJECTS (Current or Finished)/FinTrack (OOJ)/FinTrack/src/main/java/com/fintrack/controller/BudgetController.java:[42,20] cannot find symbol
+[ERROR]   symbol:   method setBudgetLimit(java.lang.Double)
+[ERROR]   location: variable cat of type com.fintrack.model.Category
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
